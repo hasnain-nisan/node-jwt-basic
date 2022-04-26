@@ -1,0 +1,15 @@
+{
+  "name": "jwt-basic",
+  "version": "1.0.0",
+  "description": "Node jwt basic",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "keywords": [
+    "node",
+    "jwt"
+  ],
+  "author": "hasnain nisan",
+  "license": "ISC"
+}
