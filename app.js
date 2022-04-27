@@ -13,15 +13,21 @@ const errorHandlerMiddleware = require('./middleware/error-handler')
 
 
 //json_middleware
+app.use(express.static('./public'))
 app.use(express.json())
 
 
+//middleware
+app.use(notFoundMiddleware)
+app.use(errorHandlerMiddleware)
+
+
 //Frontend view route
-app.get('/', (req, res) => {
-    res.send(`<div style="display:flex; align-items:center; flex-direction:column; text-decoration:underline">
-        <h1 >JWT basic in MERN</h1>
-    </div>`)
-})
+// app.get('/', (req, res) => {
+//     res.send(`<div style="display:flex; align-items:center; flex-direction:column; text-decoration:underline">
+//         <h1 >JWT basic in MERN</h1>
+//     </div>`)
+// })
 
 //port
 const port = process.env.PORT|| 5000
