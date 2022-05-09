@@ -7,6 +7,9 @@ require('express-async-errors')
 const express = require('express')
 const app = express()
 
+//routeFunc
+const mainRoute = require('./routes/main')
+
 //middleware
 const notFoundMiddleware = require('./middleware/not-found')
 const errorHandlerMiddleware = require('./middleware/error-handler')
@@ -17,17 +20,13 @@ app.use(express.static('./public'))
 app.use(express.json())
 
 
+//routes
+app.use('/api/v1', mainRoute)
+
+
 //middleware
 app.use(notFoundMiddleware)
 app.use(errorHandlerMiddleware)
-
-
-//Frontend view route
-// app.get('/', (req, res) => {
-//     res.send(`<div style="display:flex; align-items:center; flex-direction:column; text-decoration:underline">
-//         <h1 >JWT basic in MERN</h1>
-//     </div>`)
-// })
 
 //port
 const port = process.env.PORT|| 5000
