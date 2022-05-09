@@ -1,0 +1,21 @@
+@host = http://localhost:5000/api/v1
+
+###
+POST {{host}}/login HTTP/1.1
+content-type: application/json
+# Authorization: Bearer {{token}}
+# lazy_chat_token: 2c6b7c0ae95845eab685dfa945647da7
+
+{
+    
+}
+
+###
+GET {{host}}/dashboard HTTP/1.1
+content-type: application/json
+# Authorization: Bearer {{token}}
+# lazy_chat_token: 2c6b7c0ae95845eab685dfa945647da7
+
+{
+    
+}
