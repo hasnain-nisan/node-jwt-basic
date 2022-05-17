@@ -8,7 +8,7 @@ const login = async (req, res) => {
     const {username, password} = req.body
 
     if(!username || !password) {
-        throw new badRequestError('Please provide username and password')
+        throw new BadRequestError('Please provide username and password')
     }
 
     const id = new Date().getDate()
