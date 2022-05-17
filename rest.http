@@ -1,6 +1,6 @@
 @host = http://localhost:5000/api/v1
 
-@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTIsInVzZXJuYW1lIjoibmlzYW4iLCJpYXQiOjE2NTIzNTkxMjYsImV4cCI6MTY1NDk1MTEyNn0.IToqeS0laptrg6qrvEr4Z4lXhq_6ZwI0v2WJr6qh_qo
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTcsInVzZXJuYW1lIjoibVpvcnJvIiwiaWF0IjoxNjUyNzY3MTY2LCJleHAiOjE2NTUzNTkxNjZ9.wgS-hiyd05o2ch94TwuLb_-gb0C3-QuFwCKcrHoZytU
 
 ###
 POST {{host}}/login HTTP/1.1
@@ -9,7 +9,7 @@ content-type: application/json
 # lazy_chat_token: 2c6b7c0ae95845eab685dfa945647da7
 
 {
-    "username": "Luffy",
+    "username": "mZorro",
     "password": "password"
 }
 
