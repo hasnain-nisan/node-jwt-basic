@@ -1,6 +1,6 @@
 @host = http://localhost:5000/api/v1
 
-@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTcsInVzZXJuYW1lIjoibVpvcnJvIiwiaWF0IjoxNjUyNzY3MTY2LCJleHAiOjE2NTUzNTkxNjZ9.wgS-hiyd05o2ch94TwuLb_-gb0C3-QuFwCKcrHoZytU
+@token = eyJbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTcsInVzZXJuYW1lIjoibVpvcnJvIiwiaWF0IjoxNjUyNzY3MTY2LCJleHAiOjE2NTUzNTkxNjZ9.wgS-hiyd05o2ch94TwuLb_-gb0C3-QuFwCKcrHoZytU
 
 ###
 POST {{host}}/login HTTP/1.1
